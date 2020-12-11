@@ -11,4 +11,13 @@ Several approaches were used to parallelize the application and significant spee
 * Implementation with CUDA Code Optimizations
 
 # How to run
-Import any of the implementations and call the 'run_iterations' method.
+Import any of the implementations and call the `run_iterations` method.
+
+## Example
+```
+from Optimized1_GPU_RGB import *
+run_iterations([2, 50], [15], validation = True)
+```
+This would run the algorithm for generation 2 and 50 seperately, for a population size of 15. `validation = True` might reduce the runtime, as it compares each value computed on GPU with CPU.
+
+For more examples, visit the example [Google Colab Notebook](https://colab.research.google.com/drive/10zzH5kMh8ikfoeHhYjRA_Rgb_9trRzUZ?usp=sharing)
