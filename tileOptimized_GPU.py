@@ -332,9 +332,9 @@ def run_iterations(gens, pop_size, debug = False, validation = False):
     if validation:
         print(f'Timing completed, validating results!')
         GPU_fitness = [i.fitness for i in GLOBAL_INDIVIDUALS]
-        print(GPU_fitness)
+        #print(GPU_fitness)
         CPU_fitness = [compute_fitness(i.image) for i in GLOBAL_INDIVIDUALS]
-        print(CPU_fitness)
+        #print(CPU_fitness)
         assert np.allclose(GPU_fitness, CPU_fitness, atol= 1e-3, rtol = 0)
         print(f'Results validated :)')
         print(f'maximum difference = {np.amax(np.abs(np.array(GPU_fitness) - np.array(CPU_fitness)))}')
