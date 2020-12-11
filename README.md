@@ -9,3 +9,6 @@ Several approaches were used to parallelize the application and significant spee
 * Cuda naive implementation
 * CUDA Implementation with Shared Memory
 * Implementation with CUDA Code Optimizations
+
+# How to run
+Import any of the implementations and call the 'run_iterations' method.
